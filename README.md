@@ -1,5 +1,5 @@
 # docker-django
-Container with python + django
+Basic enviroment django
 
 Run the commands:
 
