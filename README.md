@@ -5,7 +5,7 @@ Run the commands:
 
 ```sh
 docker pull albovieira/docker-django
-docker-compose run web django-admin.py startproject myproject albovieira/docker-django
+docker-compose run web django-admin.py startproject myproject .
 ```
 
 Change the line command in docker-compose file:
@@ -18,4 +18,3 @@ command: python manage.py runserver 0.0.0.0:8000 && python manage.py startapp my
 ```sh
 docker-compose up
 ```
-
