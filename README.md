@@ -4,9 +4,18 @@ Container with python + django
 Run the commands:
 
 ```sh
-docker-compose run web django-admin.py startproject myproject albovieira/django
+docker pull albovieira/docker-django
+docker-compose run web django-admin.py startproject myproject albovieira/docker-django
 ```
 
+Change the line command in docker-compose file:
+
 ```sh
-python manage.py startapp myapp
+command: python manage.py runserver 0.0.0.0:8000 && python manage.py startapp myapp
 ```
+'myapp' could be changed with the name of your app.
+
+```sh
+docker-compose up
+```
+
